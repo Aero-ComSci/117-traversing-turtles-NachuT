@@ -23,17 +23,20 @@ An __str__ method on the class to print out step 6 -- for the turles, what speci
 An __init__ method to set the turtles to the data structure
 Be sure include error checks and documentation on the read me to utilize the class you create.   ✔️
  
-'class TurtleDraw:
-    def __init__(self, turtle_shapes, turtle_colors, starting_length=100, increment=18, heading=0):
-        if len(turtle_shapes) != len(turtle_colors):
-            raise ValueError("Object Error")
+```
+ class TurtleDraw:
+     def __init__(self, turtle_shapes, turtle_colors, starting_length=100, increment=18, heading=0):
+         if len(turtle_shapes) != len(turtle_colors):
+             raise ValueError("Object Error")
+ 
+         self.turtle_shapes = turtle_shapes
+         self.turtle_colors = turtle_colors
+         self.length = starting_length
+         self.increment = increment
+         self.heading = heading
+         self.turtles = []
+```
 
-        self.turtle_shapes = turtle_shapes
-        self.turtle_colors = turtle_colors
-        self.length = starting_length
-        self.increment = increment
-        self.heading = heading
-        self.turtles = []'
 3. Action Items
 
 Step 17 Extend your program
