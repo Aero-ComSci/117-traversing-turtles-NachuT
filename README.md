@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/K3waziIG)
 # Activity 1.1.7
 
 * Utilize this read me to showcase the project.
@@ -20,20 +21,34 @@ Data Structure to store the colors
 A public method that contains a loop to iterate through the data structure.
 An __str__ method on the class to print out step 6 -- for the turles, what specific information would be useful?
 An __init__ method to set the turtles to the data structure
-Be sure include error checks and documentation on the read me to utilize the class you create.
+Be sure include error checks and documentation on the read me to utilize the class you create.   ✔️
  
+```
+ class TurtleDraw:
+     def __init__(self, turtle_shapes, turtle_colors, starting_length=100, increment=18, heading=0):
+         if len(turtle_shapes) != len(turtle_colors):
+             raise ValueError("Object Error")
+ 
+         self.turtle_shapes = turtle_shapes
+         self.turtle_colors = turtle_colors
+         self.length = starting_length
+         self.increment = increment
+         self.heading = heading
+         self.turtles = []
+```
 
 3. Action Items
 
 Step 17 Extend your program
-Step 18 
+Step 18                                ✔️
 
 ## Questions about the Activity as you work. 
 ```
-
+How to get multiple functions iterating at the same time? - Used chatgpt to learn zip was the answer
 ```
 #### Description Of The App 
 
-`
+`Utilized classes and funtions to create a spiral pattern form a given list of shapes and colors
 # Include a video of the result of the code at speed 0 or Fast. Be sure to make it available for me to see.
+See files.
 ## For Regrades use the Feedback and @baeztheprog on your commit messages.
